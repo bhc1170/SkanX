@@ -1,0 +1,3 @@
+This is a clean file.
+No issues here.
+malware detected in this line.
