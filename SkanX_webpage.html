@@ -1,0 +1,199 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkanX - Robust System Scanning and Security</title>
+    <style>
+    /* Global Styles */
+body {
+    font-family: 'Courier New', monospace;
+    background-color: #121212;
+    color: #e0e0e0;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px;
+}
+
+h1, h2, h3 {
+    color: #1db954;
+}
+
+/* Header Styles */
+header {
+    background-color: #000;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Section Styles */
+section {
+    padding: 40px 0;
+}
+
+/* About Section */
+#about {
+    background-color: #1a1a1a;
+}
+
+/* Features Section */
+#features {
+    background-color: #212121;
+}
+
+.feature {
+    background-color: #2a2a2a;
+    border-left: 4px solid #1db954;
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(29, 185, 84, 0.3);
+}
+
+/* Contact Section */
+#contact {
+    background-color: #1a1a1a;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: none;
+    background-color: #2a2a2a;
+    color: #e0e0e0;
+}
+
+button {
+    background-color: #1db954;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #1ed760;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #000;
+    color: #1db954;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Security Highlight */
+.security-highlight {
+    color: #1db954;
+    font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 200" width="100%" height="auto">
+                <rect width="100%" height="100%" fill="#121212"/>
+                <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-family="'Courier New', monospace" font-size="48" fill="#1db954">Welcome To SkanX</text>
+            </svg>
+        </div>
+    </header>
+
+    <main>
+        <section id="about">
+            <div class="container">
+                <h2>About SkanX</h2>
+                <p>SkanX is dedicated to creating <span class="security-highlight">robust applications</span> for essential <span class="security-highlight">system scans</span> and <span class="security-highlight">monitoring irregularities</span>. Our goal is to <span class="security-highlight">bolster security</span> across diverse applications, enabling users to trust our tools for <span class="security-highlight">system protection</span> against threats.</p>
+            </div>
+        </section>
+
+        <section id="features">
+            <div class="container">
+                <h2>Our Features</h2>
+                <div class="feature">
+                    <h3>System Scanning</h3>
+                    <p>Utilize our advanced <span class="security-highlight">scanning technology</span> to detect <span class="security-highlight">irregularities</span> and potential <span class="security-highlight">security threats</span> in your systems.</p>
+                </div>
+                <div class="feature">
+                    <h3>Efficient Monitoring</h3>
+                    <p>Our solutions emphasize <span class="security-highlight">efficiency</span> and <span class="security-highlight">effectiveness</span> in monitoring your digital environment, preserving its <span class="security-highlight">integrity</span>.</p>
+                </div>
+                <div class="feature">
+                    <h3>Comprehensive Security</h3>
+                    <p>Equip yourself with necessary insights to <span class="security-highlight">protect your assets</span> through our thorough approach to <span class="security-highlight">system monitoring</span> and <span class="security-highlight">security</span>.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <form>
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" placeholder="Your Message" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 SkanX. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+    // Smooth scrolling for anchor links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+
+// Form submission handling
+document.querySelector('form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    alert('Form submitted! (Note: This is a demo, no actual submission occurs)');
+    this.reset();
+});
+    </script>
+</body>
+</html>
